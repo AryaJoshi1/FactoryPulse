@@ -5,6 +5,7 @@ from pathlib import Path
 import pandas as pd
 import joblib
 from kafka import KafkaConsumer
+from mongo_storage import save_prediction
 
 
 # Find the project root regardless of the terminal's current directory.
@@ -67,6 +68,13 @@ def main():
             predicted_failure = failure_probability >= threshold
 
             alert_level = "WARNING" if predicted_failure else "NORMAL"
+
+            save_prediction(
+                message=message,
+                probability=failure_probability,
+                threshold=threshold,
+                alert_level=alert_level,
+                            )
 
             print(
                 f"Machine: {message.get('machine_id', 'unknown')} | "
