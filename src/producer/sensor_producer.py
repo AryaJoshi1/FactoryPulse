@@ -66,6 +66,7 @@ def generate_reading(tick):
 
     return {
         "machine_id": MACHINE_ID,
+        "machine_type": "M",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "air_temp_K": round(air_temp, 2),
         "process_temp_K": round(process_temp, 2),
