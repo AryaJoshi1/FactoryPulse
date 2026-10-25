@@ -1,0 +1,110 @@
+{
+    "dataset": "AI4I 2020 Predictive Maintenance Dataset",
+    "split_percentages": {
+        "training": 60,
+        "validation": 20,
+        "test": 20
+    },
+    "row_counts": {
+        "training": 6000,
+        "validation": 2000,
+        "test": 2000
+    },
+    "threshold_selection": "Highest validation F1-score",
+    "selected_threshold": 0.4,
+    "validation_results": [
+        {
+            "threshold": 0.1,
+            "precision": 0.2837,
+            "recall": 0.8971,
+            "f1_score": 0.4311,
+            "false_alarms": 154,
+            "missed_failures": 7,
+            "detected_failures": 61
+        },
+        {
+            "threshold": 0.15,
+            "precision": 0.3665,
+            "recall": 0.8676,
+            "f1_score": 0.5153,
+            "false_alarms": 102,
+            "missed_failures": 9,
+            "detected_failures": 59
+        },
+        {
+            "threshold": 0.2,
+            "precision": 0.3986,
+            "recall": 0.8088,
+            "f1_score": 0.534,
+            "false_alarms": 83,
+            "missed_failures": 13,
+            "detected_failures": 55
+        },
+        {
+            "threshold": 0.25,
+            "precision": 0.4727,
+            "recall": 0.7647,
+            "f1_score": 0.5843,
+            "false_alarms": 58,
+            "missed_failures": 16,
+            "detected_failures": 52
+        },
+        {
+            "threshold": 0.3,
+            "precision": 0.5208,
+            "recall": 0.7353,
+            "f1_score": 0.6098,
+            "false_alarms": 46,
+            "missed_failures": 18,
+            "detected_failures": 50
+        },
+        {
+            "threshold": 0.35,
+            "precision": 0.5647,
+            "recall": 0.7059,
+            "f1_score": 0.6275,
+            "false_alarms": 37,
+            "missed_failures": 20,
+            "detected_failures": 48
+        },
+        {
+            "threshold": 0.4,
+            "precision": 0.6351,
+            "recall": 0.6912,
+            "f1_score": 0.662,
+            "false_alarms": 27,
+            "missed_failures": 21,
+            "detected_failures": 47
+        },
+        {
+            "threshold": 0.5,
+            "precision": 0.717,
+            "recall": 0.5588,
+            "f1_score": 0.6281,
+            "false_alarms": 15,
+            "missed_failures": 30,
+            "detected_failures": 38
+        }
+    ],
+    "final_test_results": {
+        "threshold": 0.4,
+        "precision": 0.5747,
+        "recall": 0.7353,
+        "f1_score": 0.6452,
+        "false_alarms": 37,
+        "missed_failures": 18,
+        "detected_failures": 50,
+        "roc_auc": 0.9659,
+        "average_precision": 0.7207
+    },
+    "test_confusion_matrix": [
+        [
+            1895,
+            37
+        ],
+        [
+            18,
+            50
+        ]
+    ]
+}

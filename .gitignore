@@ -9,3 +9,12 @@ data/
 .checkpoints/
 .idea/
 .vscode/
+
+# Trained model binaries
+models/*.joblib
+
+# Generated evaluation outputs (allow selected reports)
+outputs/*
+!outputs/validated_model_metrics.json
+!outputs/confusion_matrix.csv
+!outputs/threshold_comparison.csv
