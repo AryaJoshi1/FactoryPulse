@@ -210,7 +210,7 @@ The inference consumer labels a prediction `WARNING` when the estimated failure 
 
 ## Author
 
-Developed as an academic Big Data Technologies and machine learning research prototype.
+Team Project: FactoryPulse was developed collaboratively as a group project. Contributors - Arya Joshi, Samarth Patel, Mandar Deshmukh, Pramdhan Kumar.
 
 ## License
 
